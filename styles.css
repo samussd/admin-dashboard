@@ -1,7 +1,7 @@
 :root {
   --bg-pri-clr: rgb(253, 253, 253);
   --bg-sec-clr: rgb(192, 209, 214);
-  --accent-clr: rgb(145, 215, 227);
+  --accent-clr: rgb(61, 147, 217);
   --highlight-clr: rgb(237, 162, 13);
 }
 
@@ -40,13 +40,6 @@ button {
   font: inherit;
   cursor: pointer;
   outline: inherit;
-  flex-grow: 1;
-  flex-basis: content;
-
-  width: 100%;
-  color: whitesmoke;
-  padding: 8px 8px;
-  background-color: var(--accent-clr);
 }
 
 body {
@@ -69,6 +62,84 @@ body {
   padding: 20px;
   gap: 50px;
   height: 100vh;
+}
+
+.sidebar__tabs ul,
+.sidebar__extra ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sidebar a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.home-icon,
+.profile-icon,
+.messages-icon,
+.history-icon,
+.tasks-icon,
+.communities-icon,
+.settings-icon,
+.support-icon,
+.privacy-icon {
+  height: 1rem;
+  width: 1rem;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.1s ease-in-out;
+}
+
+.home-icon {
+  -webkit-mask-image: url('../assets/icons/sidebar/home.svg');
+  mask-image: url('../assets/icons/sidebar/home.svg');
+}
+
+.profile-icon {
+  -webkit-mask-image: url('../assets/icons/sidebar/profile.svg');
+  mask-image: url('../assets/icons/sidebar/profile.svg');
+}
+
+.messages-icon {
+  -webkit-mask-image: url('../assets/icons/sidebar/messages.svg');
+  mask-image: url('../assets/icons/sidebar/messages.svg');
+}
+
+.history-icon {
+  -webkit-mask-image: url('../assets/icons/sidebar/history.svg');
+  mask-image: url('../assets/icons/sidebar/history.svg');
+}
+
+.tasks-icon {
+  -webkit-mask-image: url('../assets/icons/sidebar/tasks.svg');
+  mask-image: url('../assets/icons/sidebar/tasks.svg');
+}
+
+.communities-icon {
+  -webkit-mask-image: url('../assets/icons/sidebar/communities.svg');
+  mask-image: url('../assets/icons/sidebar/communities.svg');
+}
+
+.settings-icon {
+  -webkit-mask-image: url('../assets/icons/sidebar/settings.svg');
+  mask-image: url('../assets/icons/sidebar/settings.svg');
+}
+
+.support-icon {
+  -webkit-mask-image: url('../assets/icons/sidebar/support.svg');
+  mask-image: url('../assets/icons/sidebar/support.svg');
+}
+
+.privacy-icon {
+  -webkit-mask-image: url('../assets/icons/sidebar/privacy.svg');
+  mask-image: url('../assets/icons/sidebar/privacy.svg');
 }
 
 .main {
@@ -102,11 +173,36 @@ body {
   align-items: center;
 }
 
+.search-icon,
+.notification-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.1s ease-in-out;
+}
+
+.search-icon {
+  -webkit-mask-image: url('../assets/icons/topbar/search.svg');
+  mask-image: url('../assets/icons/topbar/search.svg');
+}
+
+.notification-icon {
+  -webkit-mask-image: url('../assets/icons/topbar/notifications.svg');
+  mask-image: url('../assets/icons/topbar/notifications.svg');
+}
+
 .topbar__userprofile {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.topbar__userprofile img {
+  width: 40px;
+  height: 40px;
 }
 
 .topbar__bottom {
@@ -159,7 +255,7 @@ body {
   gap: 20px;
 }
 
-.announcements__container{
+.announcements__container {
   background-color: var(--bg-pri-clr);
   border-radius: 10px;
   padding: 20px;
@@ -168,6 +264,9 @@ body {
 /* card */
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: var(--bg-pri-clr);
   border-radius: 10px;
   border-left: 10px solid var(--highlight-clr);
@@ -186,6 +285,44 @@ body {
   flex-direction: row;
   justify-content: flex-end;
   gap: 10px;
+}
+
+.star-icon,
+.watch-icon,
+.share-icon {
+  height: 25px;
+  width: 25px;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.1s ease-in-out;
+}
+
+.star-icon {
+  -webkit-mask-image: url('../assets/icons/star-outline.svg');
+  mask-image: url('../assets/icons/star-outline.svg');
+}
+
+.star-icon:hover {
+  background-color: orange;
+}
+
+.watch-icon {
+  -webkit-mask-image: url('../assets/icons/eye-outline.svg');
+  mask-image: url('../assets/icons/eye-outline.svg');
+}
+
+.watch-icon:hover {
+  background-color: var(--accent-clr);
+}
+
+.share-icon {
+  -webkit-mask-image: url('../assets/icons/share-outline.svg');
+  mask-image: url('../assets/icons/share-outline.svg');
+}
+
+.share-icon:hover {
+  background-color: var(--accent-clr);
 }
 
 .announcements {
