@@ -65,6 +65,26 @@ body {
   padding: 20px 5px;
   gap: 50px;
   height: 100vh;
+  user-select: none;
+}
+
+.sidebar__logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 20px;
+  gap: 5px;
+
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.sidebar__tabs,
+.sidebar__extra {
+  padding: 0;
+  margin: 0;
 }
 
 .sidebar__tabs ul,
@@ -101,13 +121,23 @@ body {
 .communities-icon,
 .settings-icon,
 .support-icon,
-.privacy-icon {
+.privacy-icon,
+.dashboard-logo {
   height: 1.1rem;
   width: 1.1rem;
   background-color: white;
   background-size: cover;
   background-position: center;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
   transition: all 0.1s ease-in-out;
+}
+
+.dashboard-logo {
+  -webkit-mask-image: url('../assets/icons/dashboard.svg');
+  mask-image: url('../assets/icons/dashboard.svg');
+  height: 2rem;
+  width: 2rem;
 }
 
 .home-icon {
@@ -212,6 +242,9 @@ body {
   background-color: black;
   background-size: cover;
   background-position: center;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+
   transition: all 0.1s ease-in-out;
 }
 
@@ -257,14 +290,17 @@ body {
 
 .topbar__bottom {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .topbar__userinfo {
+  flex: 1;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   gap: 20px;
 }
@@ -275,8 +311,11 @@ body {
 }
 
 .topbar__actions {
+  flex: 1;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
   gap: 10px;
 
@@ -284,6 +323,7 @@ body {
 }
 
 .topbar__actions button {
+  flex: 1;
   background-color: var(--accent-clr);
   padding: 10px 40px;
   border-radius: 20px;
@@ -332,11 +372,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: 1 0 calc(50% - 10px);
+  padding: 30px;
+  gap: 20px;
+  width: 100%;
+
   background-color: var(--bg-pri-clr);
   border-radius: 10px;
   border-left: 10px solid var(--highlight-clr);
-  padding: 30px;
-  flex: 0 0 calc(50% - 10px);
 }
 
 .card__content {
@@ -426,4 +469,88 @@ body {
   width: 3rem;
   height: 3em;
   border-radius: 50%;
+}
+
+
+@media only screen and (max-width: 1023px) {
+  /* PROJECTS SECTION */
+
+  .content {
+    display: flex;
+    background-color: var(--bg-sec-clr);
+    flex-wrap: wrap;
+  }
+
+  .projects {
+    flex: 1 0 90%;
+    padding: 20px;
+  }
+
+  .announcements {
+    flex: 1 0 50%;
+    padding: 20px;
+  }
+
+  .trending {
+    flex: 1 0 50%;
+    padding: 20px;
+  }
+
+  /* SIDEBAR */
+
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: sticky;
+    z-index: 2;
+
+    background-color: var(--accent-clr);
+    padding: 10px 5px;
+    gap: 60px;
+    height: max-content;
+
+    max-width: 100vw;
+    overflow-x: scroll;
+  }
+
+  .sidebar__tabs ul,
+  .sidebar__extra ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+  }
+
+  .sidebar a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 14px;
+    gap: 5px;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .topbar {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    z-index: 1;
+    top: auto;
+
+    padding: 20px;
+    gap: 10px;
+    background-color: var(--bg-pri-clr);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
 }
