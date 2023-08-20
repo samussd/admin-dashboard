@@ -1,7 +1,7 @@
 :root {
   --bg-pri-clr: rgb(253, 253, 253);
-  --bg-sec-clr: rgb(192, 209, 214);
-  --accent-clr: rgb(61, 147, 217);
+  --bg-sec-clr: rgb(210, 230, 236);
+  --accent-clr: rgb(40, 158, 217);
   --highlight-clr: rgb(237, 162, 13);
 }
 
@@ -16,6 +16,7 @@ a:active {
   text-decoration: none;
   color: inherit;
 }
+
 
 h1,
 h2,
@@ -47,6 +48,8 @@ body {
   flex-direction: row;
   padding: 0;
   margin: 0 auto;
+
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -59,7 +62,7 @@ body {
   z-index: 2;
 
   background-color: var(--accent-clr);
-  padding: 20px;
+  padding: 20px 5px;
   gap: 50px;
   height: 100vh;
 }
@@ -69,15 +72,25 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
+
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
 }
+
 
 .sidebar a {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  gap: 10px;
+  padding: 10px 50px 10px 5px;
+  gap: 15px;
+  transition: all 0.1s ease-in-out;
+}
+
+.sidebar a:hover {
+  background-color: rgb(75, 183, 222);
 }
 
 .home-icon,
@@ -89,8 +102,8 @@ body {
 .settings-icon,
 .support-icon,
 .privacy-icon {
-  height: 1rem;
-  width: 1rem;
+  height: 1.1rem;
+  width: 1.1rem;
   background-color: white;
   background-size: cover;
   background-position: center;
@@ -155,7 +168,7 @@ body {
   z-index: 1;
 
   padding: 20px;
-  gap: 20px;
+  gap: 10px;
   background-color: var(--bg-pri-clr);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -167,16 +180,35 @@ body {
 }
 
 .searchbar {
+  flex: 3;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  gap: 10px;
+}
+
+.searchbar__input {
+  border: none;
+  outline: none;
+  background-color: var(--bg-sec-clr);
+  border-radius: 2rem;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 5px 15px;
+  width: 20%;
+  margin: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.searchbar__input:focus {
+  width: 100%;
 }
 
 .search-icon,
 .notification-icon {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.8rem;
+  width: 1.8rem;
   background-color: black;
   background-size: cover;
   background-position: center;
@@ -193,16 +225,34 @@ body {
   mask-image: url('../assets/icons/topbar/notifications.svg');
 }
 
+.topbar__topcorner {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
 .topbar__userprofile {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
+
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 .topbar__userprofile img {
   width: 40px;
   height: 40px;
+}
+
+.topbar__userinfo img {
+  width: 60px;
+  height: 60px;
 }
 
 .topbar__bottom {
@@ -216,6 +266,12 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
+}
+
+.topbar__greeting--bold {
+  font-weight: bolder;
+  font-size: x-large;
 }
 
 .topbar__actions {
@@ -223,10 +279,19 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 10px;
+
+  color: white;
 }
 
 .topbar__actions button {
-  height: 50%;
+  background-color: var(--accent-clr);
+  padding: 10px 40px;
+  border-radius: 20px;
+  transition: all 0.1s ease-in-out;
+}
+
+.topbar__actions button:hover {
+  filter: brightness(110%) saturate(90%);
 }
 
 /* content */
@@ -303,16 +368,18 @@ body {
   mask-image: url('../assets/icons/star-outline.svg');
 }
 
-.star-icon:hover {
-  background-color: orange;
-}
-
 .watch-icon {
   -webkit-mask-image: url('../assets/icons/eye-outline.svg');
   mask-image: url('../assets/icons/eye-outline.svg');
 }
 
-.watch-icon:hover {
+.star-icon.active,
+.star-icon:not(.active):hover {
+  background-color: orange;
+}
+
+.watch-icon.active,
+.watch-icon:not(.active):hover {
   background-color: var(--accent-clr);
 }
 
@@ -352,5 +419,11 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
+}
+
+.trending__element img {
+  width: 3rem;
+  height: 3em;
+  border-radius: 50%;
 }

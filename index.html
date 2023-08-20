@@ -7,6 +7,12 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -17,34 +23,52 @@
     </div>
     <div class="sidebar__tabs">
       <ul>
-        <li><a href="#"><div class="home-icon"></div> Home</a></li>
-        <li><a href="#"><div class="profile-icon"></div>Profile</a></li>
-        <li><a href="#"><div class="messages-icon"></div>Messages</a></li>
-        <li><a href="#"><div class="history-icon"></div>History</a></li>
-        <li><a href="#"><div class="tasks-icon"></div>Tasks</a></li>
-        <li><a href="#"><div class="communities-icon"></div>Communities</a></li>
+        <li><a href="#">
+            <div class="home-icon"></div> Home
+          </a></li>
+        <li><a href="#">
+            <div class="profile-icon"></div>Profile
+          </a></li>
+        <li><a href="#">
+            <div class="messages-icon"></div>Messages
+          </a></li>
+        <li><a href="#">
+            <div class="history-icon"></div>History
+          </a></li>
+        <li><a href="#">
+            <div class="tasks-icon"></div>Tasks
+          </a></li>
+        <li><a href="#">
+            <div class="communities-icon"></div>Communities
+          </a></li>
       </ul>
     </div>
     <div class="sidebar__extra">
       <ul>
-        <li><a href="#"><div class="settings-icon"></div>Settings</a></li>
-        <li><a href="#"><div class="support-icon"></div>Support</a></li>
-        <li><a href="#"><div class="privacy-icon"></div>Privacy</a></li>
+        <li><a href="#">
+            <div class="settings-icon"></div>Settings
+          </a></li>
+        <li><a href="#">
+            <div class="support-icon"></div>Support
+          </a></li>
+        <li><a href="#">
+            <div class="privacy-icon"></div>Privacy
+          </a></li>
       </ul>
     </div>
 
   </section>
-  
+
   <main class="main">
     <section class="topbar">
 
       <div class="topbar__top">
         <div class="searchbar">
-          <div class="searchbar__search-icon search-icon">srchicon</div>
+          <div class="searchbar__search-icon search-icon"></div>
           <input class="searchbar__input" type="text" name="searchbar" id="searchbar">
         </div>
-        <div class="topbar__userprofile">
-          <div class="topbar__notifications-icon notification-icon">notificon</div>
+        <div class="topbar__topcorner">
+          <button class="topbar__notifications-icon notification-icon" type="button"></button>
           <div class="topbar__userprofile">
             <img src="assets/pictures/user1.png" class="topbar__userimg">
             <p><span class="username">Morgan Oakley</span></p>
@@ -54,11 +78,13 @@
 
       <div class="topbar__bottom">
         <div class="topbar__userinfo">
-          <img src="placeholderuser.png" class="topbar__userimg">
+          <img src="assets/pictures/user1.png" class="topbar__userimg">
           <p class="topbar__greeting">
-            <span class="topbar__greeting-hi">Hi there,</span>
+            Hi there,
             <br>
-            <span class="username">Morgan Oakley</span> (@<span class="userhandle">morgan</span>)
+            <span class="topbar__greeting--bold">
+              <span class="username">Morgan Oakley</span> (@<span class="userhandle">morgan</span>)
+            </span>
           </p>
         </div>
         <div class="topbar__actions">
@@ -70,7 +96,7 @@
       </div>
 
     </section>
-    
+
     <section class="content">
 
       <div class="projects">
@@ -79,12 +105,13 @@
           <div class="card">
             <div class="card__content">
               <h3 class="card__title">Title</h3>
-              <p class="card__description">description description description description description description description description </p>
+              <p class="card__description">description description description description description description
+                description description </p>
             </div>
             <div class="card__actions">
               <button class="card__star-icon star-icon" type="button"></button>
               <button class="card__watch-icon watch-icon" type="button"></buttom>
-              <button class="card__share-icon share-icon" type="button"></button>
+                <button class="card__share-icon share-icon" type="button"></button>
             </div>
           </div>
         </div>
@@ -94,18 +121,8 @@
         <h2>Announcements</h2>
         <div class="announcements__container">
           <div class="announcements__element">
-            <h3>Title of announcement</h3>
-            <p>lorem ipsum bla bla bla bla bla bla bla bla</p>
-          </div>
-          <hr>
-          <div class="announcements__element">
-            <h3>Titulo hahah</h3>
-            <p>lorem ipsum bla bla bla bla bsaddsadsad</p>
-          </div>
-          <hr>
-          <div class="announcements__element">
-            <h3>Kazakstan ugraje nam bombardirovki</h3>
-            <p>wee woo wee woo wee woo wee woo wee woo wee woo wee woo </p>
+            <h3>Title</h3>
+            <p>announcement announcement announcement announcement announcement</p>
           </div>
         </div>
       </div>
@@ -114,31 +131,10 @@
         <h2>Trending</h2>
         <div class="trending__container">
           <div class="trending__element">
-            <img src="placeholderuser.png" class="topbar__userimg">
+            <img src="assets/pictures/user1.png" class="trending__userimg">
             <div class="trending__project-info">
-              <h3>@username</h3>
+              <h3>@example</h3>
               <p>Project title</p>
-            </div>
-          </div>
-          <div class="trending__element">
-            <img src="placeholderuser.png" class="topbar__userimg">
-            <div class="trending__project-info">
-              <h3>@sam</h3>
-              <p>Cool proj</p>
-            </div>
-          </div>
-          <div class="trending__element">
-            <img src="placeholderuser.png" class="topbar__userimg">
-            <div class="trending__project-info">
-              <h3>@kendall</h3>
-              <p>Life Changing App</p>
-            </div>
-          </div>
-          <div class="trending__element">
-            <img src="placeholderuser.png" class="topbar__userimg">
-            <div class="trending__project-info">
-              <h3>@alex</h3>
-              <p>No Traffic Maker</p>
             </div>
           </div>
         </div>
