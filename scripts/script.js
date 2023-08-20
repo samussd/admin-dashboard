@@ -40,6 +40,7 @@ function addCard(title, description) {
 
   const cardElement = document.createElement('div');
   cardElement.classList.add('card');
+  cardElement.classList.add('box');
 
   const cardContentDiv = document.createElement('div');
   cardContentDiv.classList.add('card__content');
@@ -141,13 +142,13 @@ function startTopbarUI(loggeduser) {
 // CREATING USERS AND PROJECTS
 
 const loggeduser = new User("Samuel Sousa", "samussd", "user1");
-const user2 = new User("Cool Name", "username", "user2");
+const user2 = new User("Cool Name", "linda", "user2");
 const user3 = new User("WWhite", "walter_white", "user3");
 const user4 = new User("Alex The Great", "alex", "user4");
 
-const project1 = new Project("Testing", "bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla");
-const project2 = new Project("Very Cool App", "lorem ipsum bla bla bla blalorem ipsum bla bla bla bla lorem ipsum bla bla bla bla lorem ipsum bla bla bla bla lorem ipsum bla bla bla bl");
-const project3 = new Project("Pixel Sketch", "Online pixel art maker with multiple drawing options and color selections. You can change canvas and brush size.")
+const project1 = new Project("Calculator", "Online calculator app with diverse functionality and ability to process advanced expressions.");
+const project2 = new Project("Pixel Sketch", "Online pixel art maker with multiple drawing options and color selections. You can change canvas and brush size.")
+const project3 = new Project("Very Cool App", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.");
 
 loggeduser.addProject(project1);
 loggeduser.addProject(project2);
@@ -161,9 +162,9 @@ loggeduser.projects.forEach(proj => {
   addCard(proj.title, proj.description);
 });
 
-addAnnouncement('Title of announcement', 'lorem ipsum bla bla bla bla bla bla bla bla');
-addAnnouncement('Titulo hahah', 'lorem ipsum bla bla bla bla bsaddsadsad');
-addAnnouncement('Kazakstan ugraje nam bombardirovki', 'wee woo wee woo wee woo wee woo wee woo wee woo wee woo');
+addAnnouncement('Something happened', 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.');
+addAnnouncement('New changes incoming', 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.');
+addAnnouncement('Emergency Alert', 'Wee woo wee woo wee woo wee woo wee woo wee woo wee woo wee woo wee woo wee woo wee woo');
 
 addTrending(user2, "Cool App");
 addTrending(loggeduser, "Pixel Sketch");
