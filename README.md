@@ -5,7 +5,7 @@
 ---
 
 ## About
-Dummy admin dashboard made for The Odin Project assignment. <br/>
+Dummy admin dashboard made for The Odin Project's assignment. <br/>
 Fully responsive design. <br/>
 
 ---
