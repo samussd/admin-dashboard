@@ -139,55 +139,55 @@ body {
 }
 
 .dashboard-logo {
-  -webkit-mask-image: url('/assets/icons/dashboard.svg');
-  mask-image: url('/assets/icons/dashboard.svg');
+  -webkit-mask-image: url('assets/icons/dashboard.svg');
+  mask-image: url('assets/icons/dashboard.svg');
   height: 2rem;
   width: 2rem;
 }
 
 .home-icon {
-  -webkit-mask-image: url('/assets/icons/sidebar/home.svg');
-  mask-image: url('/assets/icons/sidebar/home.svg');
+  -webkit-mask-image: url('assets/icons/sidebar/home.svg');
+  mask-image: url('assets/icons/sidebar/home.svg');
 }
 
 .profile-icon {
-  -webkit-mask-image: url('/assets/icons/sidebar/profile.svg');
-  mask-image: url('/assets/icons/sidebar/profile.svg');
+  -webkit-mask-image: url('assets/icons/sidebar/profile.svg');
+  mask-image: url('assets/icons/sidebar/profile.svg');
 }
 
 .messages-icon {
-  -webkit-mask-image: url('/assets/icons/sidebar/messages.svg');
-  mask-image: url('/assets/icons/sidebar/messages.svg');
+  -webkit-mask-image: url('assets/icons/sidebar/messages.svg');
+  mask-image: url('assets/icons/sidebar/messages.svg');
 }
 
 .history-icon {
-  -webkit-mask-image: url('/assets/icons/sidebar/history.svg');
-  mask-image: url('/assets/icons/sidebar/history.svg');
+  -webkit-mask-image: url('assets/icons/sidebar/history.svg');
+  mask-image: url('assets/icons/sidebar/history.svg');
 }
 
 .tasks-icon {
-  -webkit-mask-image: url('/assets/icons/sidebar/tasks.svg');
-  mask-image: url('/assets/icons/sidebar/tasks.svg');
+  -webkit-mask-image: url('assets/icons/sidebar/tasks.svg');
+  mask-image: url('assets/icons/sidebar/tasks.svg');
 }
 
 .communities-icon {
-  -webkit-mask-image: url('/assets/icons/sidebar/communities.svg');
-  mask-image: url('/assets/icons/sidebar/communities.svg');
+  -webkit-mask-image: url('assets/icons/sidebar/communities.svg');
+  mask-image: url('assets/icons/sidebar/communities.svg');
 }
 
 .settings-icon {
-  -webkit-mask-image: url('/assets/icons/sidebar/settings.svg');
-  mask-image: url('/assets/icons/sidebar/settings.svg');
+  -webkit-mask-image: url('assets/icons/sidebar/settings.svg');
+  mask-image: url('assets/icons/sidebar/settings.svg');
 }
 
 .support-icon {
-  -webkit-mask-image: url('/assets/icons/sidebar/support.svg');
-  mask-image: url('/assets/icons/sidebar/support.svg');
+  -webkit-mask-image: url('assets/icons/sidebar/support.svg');
+  mask-image: url('assets/icons/sidebar/support.svg');
 }
 
 .privacy-icon {
-  -webkit-mask-image: url('/assets/icons/sidebar/privacy.svg');
-  mask-image: url('/assets/icons/sidebar/privacy.svg');
+  -webkit-mask-image: url('assets/icons/sidebar/privacy.svg');
+  mask-image: url('assets/icons/sidebar/privacy.svg');
 }
 
 .main {
@@ -256,13 +256,13 @@ body {
 }
 
 .search-icon {
-  -webkit-mask-image: url('/assets/icons/topbar/search.svg');
-  mask-image: url('/assets/icons/topbar/search.svg');
+  -webkit-mask-image: url('assets/icons/topbar/search.svg');
+  mask-image: url('assets/icons/topbar/search.svg');
 }
 
 .notification-icon {
-  -webkit-mask-image: url('/assets/icons/topbar/notifications.svg');
-  mask-image: url('/assets/icons/topbar/notifications.svg');
+  -webkit-mask-image: url('assets/icons/topbar/notifications.svg');
+  mask-image: url('assets/icons/topbar/notifications.svg');
 }
 
 .topbar__topcorner {
@@ -426,13 +426,13 @@ body {
 }
 
 .star-icon {
-  -webkit-mask-image: url('/assets/icons/star-outline.svg');
-  mask-image: url('/assets/icons/star-outline.svg');
+  -webkit-mask-image: url('assets/icons/star-outline.svg');
+  mask-image: url('assets/icons/star-outline.svg');
 }
 
 .watch-icon {
-  -webkit-mask-image: url('/assets/icons/eye-outline.svg');
-  mask-image: url('/assets/icons/eye-outline.svg');
+  -webkit-mask-image: url('assets/icons/eye-outline.svg');
+  mask-image: url('assets/icons/eye-outline.svg');
 }
 
 .star-icon.active,
@@ -446,8 +446,8 @@ body {
 }
 
 .share-icon {
-  -webkit-mask-image: url('/assets/icons/share-outline.svg');
-  mask-image: url('/assets/icons/share-outline.svg');
+  -webkit-mask-image: url('assets/icons/share-outline.svg');
+  mask-image: url('assets/icons/share-outline.svg');
 }
 
 .share-icon:hover {
