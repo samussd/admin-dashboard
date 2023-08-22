@@ -181,8 +181,8 @@ stars.forEach(starIcon => {
     starIcon.classList.toggle('active');
 
     const urlSuffix = starIcon.classList.contains('active') ? '' : '-outline';
-    starIcon.style.webkitMaskImage = `url('../assets/icons/star${urlSuffix}.svg')`;
-    starIcon.style.maskImage = `url('../assets/icons/star${urlSuffix}.svg')`;
+    starIcon.style.webkitMaskImage = `url('assets/icons/star${urlSuffix}.svg')`;
+    starIcon.style.maskImage = `url('assets/icons/star${urlSuffix}.svg')`;
   });
 });
 
@@ -191,7 +191,7 @@ eyes.forEach(eyeIcon => {
     eyeIcon.classList.toggle('active');
 
     const urlSuffix = eyeIcon.classList.contains('active') ? '' : '-outline';
-    eyeIcon.style.webkitMaskImage = `url('../assets/icons/eye${urlSuffix}.svg')`;
-    eyeIcon.style.maskImage = `url('../assets/icons/eye${urlSuffix}.svg')`;
+    eyeIcon.style.webkitMaskImage = `url('assets/icons/eye${urlSuffix}.svg')`;
+    eyeIcon.style.maskImage = `url('assets/icons/eye${urlSuffix}.svg')`;
   });
 });
